@@ -1,0 +1,13 @@
+   
+        body{
+        background-color:rgb(134, 54, 54);
+        color: burlywood;
+        text-align:center;
+
+    }
+    #lampadainversa{
+        transform: scaleX(-1);
+    }
+
+
+
