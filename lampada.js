@@ -1,4 +1,3 @@
-
 const elementoResposta = document.querySelector("#resposta")
 
 const inputdaPergunta = document.querySelector("#inputdaPergunta")
@@ -55,4 +54,3 @@ elementoResposta.style.opacity = 1;
 
 
 }
-
