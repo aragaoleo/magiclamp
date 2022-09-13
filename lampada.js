@@ -1,9 +1,8 @@
+
 const elementoResposta = document.querySelector("#resposta")
-
-const inputdaPergunta = document.querySelector("#inputdaPergunta")
-
+const input = document.querySelector("#inputdaPergunta")
 const lamp = document.querySelector("#lampadainversa")
-
+const button = document.querySelector("#button")
 const respostas = [
   'Com certeza!',
   'Não tenho tanta certeza.',
@@ -24,33 +23,26 @@ const respostas = [
   'Concentre-se e pergunte novamente.',
   'Sinais apontam que sim.'
 ]
-
-
-    function lampgenio() {
+    
+    function esfregueLampada() {
        lamp.src = 'https://i0.wp.com/www.skooterblog.com/wp-content/uploads/2009/04/akinator_1_defi1.png'
-
+       document.getElementById('tittle').innerHTML = "Você tem 3 desejos"
+       input.style.opacity = 1;
+       button.style.opacity = 1; 
     }
-
-    lamp.addEventListener ( 'click' , lampgenio )
-
-
+    lamp.addEventListener ( 'click' , esfregueLampada )
 
 function fazerPergunta() {
   
-if(inputdaPergunta.value == "") {
+if(input.value == "") {
   alert("Ainda não perguntou")
   return
 }
 
-const pergunta = "<div>"  + inputdaPergunta.value + "</div>"
-
+const pergunta = "<div>"  + input.value + "</div>"
 const totalRespostas = respostas.length
 const numeroAleatorio = Math.floor(Math.random() * totalRespostas)
 
 elementoResposta.innerHTML = respostas[numeroAleatorio]
-
 elementoResposta.style.opacity = 1;
-
-
-
 }
