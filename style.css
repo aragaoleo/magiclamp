@@ -46,4 +46,59 @@
 	    cursor: pointer;
         opacity: 0 ;
         transition: opacity 2s;
-        }     
+        }
+        
+
+        
+   
+        body{
+        background-color:rgb(134, 54, 54);
+        font-family: 'open sans', sans-serif;
+        }
+
+        div{
+            margin:auto;
+            padding: 50px;
+            border: 50px;
+            width: 450px;
+        }
+
+        #lampadainversa{
+        margin: 0 0 0 100px; /*topo, direita, baixo, esquerda)*/
+        transform: scaleX(-1);
+        }
+
+        .frases{
+            color: burlywood;
+            text-align:center;
+        }
+        
+        #inputdaPergunta{
+            width: 50%;
+            margin: 0 0 0 100px;
+	        text-align: center;
+	        padding: 8px;
+	        border: none;
+	        border-radius: 50px;
+            outline: none;
+            opacity: 0;
+            transition: opacity 2s;
+        }
+
+        #button{
+        padding: 8px;
+	    width: 23%;
+	    margin: 10px 0 0 165px;
+        border: none;
+	    border-radius: 50px;
+	    text-transform: uppercase ;
+	    font-weight: 700;
+	    color: #fff;
+	    background: rgb(247, 100, 47);
+	    cursor: pointer;
+        opacity: 0 ;
+        transition: opacity 2s;
+        }
+        
+
+        
